@@ -1,5 +1,5 @@
 {% set name = "sqlalchemy-spanner" %}
-{% set version = "1.2.2" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # source from PyPI is missing version.py
   url: https://github.com/cloudspannerecosystem/python-spanner-sqlalchemy/archive/refs/tags/v{{ version }}.zip
-  sha256: a88ef6c2f631fda2b7ec403e07fd7f1757aeba0140405fc5ef65e6719b1a460d
+  sha256: a97bcf83ee8f39c8cc8b1b5f210c544bc0206b5e074e23c0c78d8c10011e5538
 
 build:
   noarch: python
