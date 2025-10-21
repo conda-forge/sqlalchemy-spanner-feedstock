@@ -1,5 +1,5 @@
 {% set name = "sqlalchemy-spanner" %}
-{% set version = "1.17.0" %}
+{% set version = "1.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy_spanner-{{ version }}.tar.gz
-  sha256: fb68eeb9676b49cd04c4dca9f0e9ef2a996e5553b19aff2069df3be84176359c
+  sha256: 1542c2e69b1923974d8ad884ffc458f7d135e44af1c475b98decf75d90eccaa3
 
 build:
   noarch: python
