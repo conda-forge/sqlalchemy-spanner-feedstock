@@ -5,7 +5,7 @@
 
 [workspace]
 name = "sqlalchemy-spanner-feedstock"
-version = "3.54.1"  # conda-smithy version used to generate this file
+version = "3.57.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/sqlalchemy-spanner-feedstock"
 authors = ["@conda-forge/sqlalchemy-spanner"]
 channels = ["conda-forge"]
