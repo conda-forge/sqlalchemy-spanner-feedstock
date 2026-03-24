@@ -44,7 +44,7 @@ about:
   summary: SQLAlchemy dialect integrated into Cloud Spanner database
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://github.com/cloudspannerecosystem/python-spanner-sqlalchemy
+  homepage: https://github.com/googleapis/google-cloud-python/tree/main/packages/sqlalchemy-spanner
 
 extra:
   recipe-maintainers:
