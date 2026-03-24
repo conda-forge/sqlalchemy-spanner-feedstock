@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqlalchemy-spanner
-  version: 1.17.2
+  version: "1.17.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqlalchemy_spanner-${{ version }}.tar.gz
-  sha256: 56ce4da7168a27442d80ffd71c29ed639b5056d7e69b1e69bb9c1e10190b67c4
+  sha256: ea829d8223c404f19f854c4c2dbf6bf2ee48fb1347caa258f03e88071f3afa22
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
