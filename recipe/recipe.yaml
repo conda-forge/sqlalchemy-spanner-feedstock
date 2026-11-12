@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqlalchemy-spanner
-  version: "1.20.1"
+  version: 1.21.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqlalchemy_spanner-${{ version }}.tar.gz
-  sha256: 73537add78fe258752545d1e2d3e13be081ba278b0612cbd671b26f6c24fad64
+  sha256: f906cf9657d5e1f1afbd2f867df8812c2fbc9d36479db91bc3c3592d7415e2a6
 
 build:
   number: 0
@@ -24,17 +24,16 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - sqlalchemy >=1.1.13
+    - sqlalchemy >=1.1.13,<3.0.0
     - google-cloud-spanner >=3.55.0
-    - alembic
-
+    - alembic >=1.0.0,<2.0.0
 tests:
   - python:
       imports:
         - google.cloud.sqlalchemy_spanner
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - requirements:
       run:
         - python ${{ python_min }}.*
